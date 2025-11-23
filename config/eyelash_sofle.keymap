@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -67,11 +66,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6     &kp F7        &kp F8        &kp F9        &kp F10    &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans        &trans        &trans        &trans
+&kp GRAVE   &kp F1    &kp F2         &kp F3        &kp F4         &kp F5             &mmv MOVE_UP     &kp F6           &kp F7        &kp F8        &kp F9        &kp F10       &trans
+&trans      &kp HOME  &kp PAGE_UP    &kp KP_ENTER  &kp DELETE     &kp Y              &mmv MOVE_DOWN   &kp PG_UP        &kp N7        &kp N8        &kp N9        &kp MINUS     &kp EQUAL
+&trans      &kp END   &kp PAGE_DOWN  &kp ENTER     &kp BACKSPACE  &kp KP_NUMBER_0    &mmv MOVE_LEFT   &kp PG_DN        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp ASTERISK
+&trans      &kt I     &kp O          &kp COMMA     &kp PERIOD     &kp N              &mmv MOVE_RIGHT  &kp KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER     &kp SLASH
+&kp C_MUTE  &trans    &trans         &trans        &trans         &trans             &mkp LCLK        &trans           &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
             >;
 
             display-name = "layer1";
